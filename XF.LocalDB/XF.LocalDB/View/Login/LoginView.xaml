@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF.LocalDB.View.Login.LoginView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Informe seu usuário" Text="{Binding UsuarioModel.Nome}" />
+            <Entry IsPassword="True" Placeholder="Informe sua senha" Text="{Binding UsuarioModel.Senha}" />
+            <Button Text="Entrar" Command="{Binding IsAutenticarCMD}" CommandParameter="{Binding UsuarioModel}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
